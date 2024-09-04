@@ -37,5 +37,5 @@ jobs:
         with:
           install_command: cd packages/design-system && pnpm install # default: npm ci
           build_command: pnpm build  # default: npm run build-storybook
-          path: ./storybook-static # default: dist/storybook
+          path: packages/design-system/storybook-static # default: dist/storybook
           checkout: false # default: true
