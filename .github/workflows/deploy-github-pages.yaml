@@ -33,7 +33,7 @@ jobs:
         with:
           version: 9
       - uses: bitovi/github-actions-storybook-to-github-pages@v1.0.3
-        working-directory: ./packages/design-system
+        run: cd packages/design-system
         with:
           install_command: pnpm install # default: npm ci
           build_command: cd packages/design-system build-storybook # default: npm run build-storybook
