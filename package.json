@@ -1,6 +1,9 @@
 {
   "name": "root",
   "private": true,
+  "scripts": {
+    "build-storybook":"cd packages/design-system && pnpm run build"
+  },
   "dependencies": {
     "@mdi/font": "^7.4.47"
   },
