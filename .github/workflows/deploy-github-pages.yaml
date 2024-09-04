@@ -33,8 +33,9 @@ jobs:
         with:
           version: 9
       - uses: bitovi/github-actions-storybook-to-github-pages@v1.0.3
+        working-directory: ./packages/design-system
         with:
           install_command: pnpm install # default: npm ci
-          build_command: cd packages/design-system && build-storybook # default: npm run build-storybook
+          build_command: cd packages/design-system build-storybook # default: npm run build-storybook
           path: packages/design-system/storybook-static # default: dist/storybook
           checkout: false # default: true
